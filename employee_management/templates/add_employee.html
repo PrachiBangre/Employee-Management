@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Add New Employee</h2>
+<form method="POST" style="margin-top: 20px;">
+    <label>First Name:</label><br>
+    <input type="text" name="first_name" style="margin-bottom: 10px; width: 100%; padding: 8px;"><br>
+    
+    <label>Last Name:</label><br>
+    <input type="text" name="last_name" style="margin-bottom: 10px; width: 100%; padding: 8px;"><br>
+    
+    <label>Email:</label><br>
+    <input type="email" name="email" style="margin-bottom: 10px; width: 100%; padding: 8px;"><br>
+    
+    <label>Phone:</label><br>
+    <input type="text" name="phone" style="margin-bottom: 10px; width: 100%; padding: 8px;"><br>
+    
+    <label>Department:</label><br>
+    <input type="text" name="department" style="margin-bottom: 10px; width: 100%; padding: 8px;"><br>
+    
+    <button type="submit">Add Employee</button>
+</form>
+{% endblock %}

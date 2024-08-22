@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Are you sure you want to delete this employee?</h2>
+<form method="POST" style="margin-top: 20px;">
+    <button type="submit" style="background-color: #dc3545;">Yes, Delete</button>
+    <a href="{{ url_for('employees') }}" style="margin-left: 20px; color: #007bff;">Cancel</a>
+</form>
+{% endblock %}
